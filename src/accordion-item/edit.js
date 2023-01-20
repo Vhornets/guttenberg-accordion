@@ -26,29 +26,29 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function Edit( { attributes, setAttributes } ) {
-	const blockProps = useBlockProps();
+    const blockProps = useBlockProps();
 
-	const onChangeTitle = ( value ) => {
-		setAttributes( { title: value } );
-	};
+    const onChangeTitle = ( value ) => {
+        setAttributes( { title: value } );
+    };
 
-	const onChangeContent = ( value ) => {
-		setAttributes( { content: value } );
-	};
+    const onChangeContent = ( value ) => {
+        setAttributes( { content: value } );
+    };
 
-	return (
-		<div { ...blockProps }>
-			<RichText
-				tagName="h3"
-				value={ attributes.title }
-				onChange={ onChangeTitle }
+    return (
+        <div { ...blockProps }>
+            <RichText
+                tagName="h3"
+                value={ attributes.title }
+                onChange={ onChangeTitle }
             />
-			
+            
             <RichText
                 tagName="p"
                 value={ attributes.content }
                 onChange={ onChangeContent }
             />
-		</div>
-	);
+        </div>
+    );
 }

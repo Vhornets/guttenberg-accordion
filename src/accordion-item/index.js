@@ -29,7 +29,7 @@ import metadata from './block.json';
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
 registerBlockType( metadata.name, {
-	edit: Edit,
+    edit: Edit,
 
-	save,
+    save,
 } );

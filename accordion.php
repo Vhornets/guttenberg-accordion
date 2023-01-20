@@ -14,7 +14,7 @@
  */
 
 function accordion_accordion_block_init() {
-	register_block_type( __DIR__ . '/build/accordion' );
-	register_block_type( __DIR__ . '/build/accordion-item' );
+    register_block_type( __DIR__ . '/build/accordion' );
+    register_block_type( __DIR__ . '/build/accordion-item' );
 }
 add_action( 'init', 'accordion_accordion_block_init' );
