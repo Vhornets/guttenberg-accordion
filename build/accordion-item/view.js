@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{let e=document.querySelectorAll(".wp-block-accordion-accordion-item");e.forEach((c=>{c.addEventListener("click",(t=>{e.forEach((e=>e.classList.remove("is-active"))),c.classList.add("is-active")}))}))}));
